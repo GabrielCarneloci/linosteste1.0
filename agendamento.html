@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Agendamento - Barbearia Linos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Barbearia Linos</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Agende seu horário</h2>
+
+    <form id="form-agenda" class="form">
+      <label>Nome
+        <input type="text" id="nome" required>
+      </label>
+
+      <label>Serviço
+        <select id="servico" required>
+          <option value="Corte">Corte</option>
+          <option value="Corte + Sobrancelha">Corte + Sobrancelha</option>
+          <option value="Barba">Barba</option>
+        </select>
+      </label>
+
+      <label>Data
+        <input type="date" id="data" required>
+      </label>
+
+      <label>Hora
+        <input type="time" id="hora" required>
+      </label>
+
+      <button class="btn" type="submit">Confirmar</button>
+    </form>
+
+    <section id="lista-agendamentos">
+      <h3>Próximos agendamentos</h3>
+      <div id="agend-list" class="cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year2"></span> Barbearia Linos</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Barbearia Linos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Barbearia Linos</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Painel Administrativo</h2>
+
+    <div id="login-area" class="box">
+      <h3>Login</h3>
+      <form id="login-form" class="form">
+        <label>Usuário
+          <input type="text" id="admin-user" required>
+        </label>
+        <label>Senha
+          <input type="password" id="admin-pass" required>
+        </label>
+        <button class="btn" type="submit">Entrar</button>
+      </form>
+      <p class="small">Usuário padrão: <strong>admin</strong> Senha padrão: <strong>1234</strong></p>
+    </div>
+
+    <div id="panel-area" class="box" style="display:none">
+      <h3>Agendamentos</h3>
+      <div id="admin-list"></div>
+      <button id="logout" class="btn" style="margin-top:12px">Sair</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year3"></span> Barbearia Linos</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
